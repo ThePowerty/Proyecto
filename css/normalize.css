@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Big Shoulders", sans-serif;
+}
+
+html {
+  height: 100%;
+  font-size: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  color: #151515;
+  background-color: #D9D9D9;
+}
+
+main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+@media (min-width: 1025px) {
+  html {
+      font-size: 18px;
+  }
+
+  body {
+      line-height: 28px;
+  }
+}

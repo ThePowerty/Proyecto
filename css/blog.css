@@ -1,0 +1,16 @@
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.blog figure img{
+    width: 100%;
+}
+
+.blog ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 1rem;
+}
