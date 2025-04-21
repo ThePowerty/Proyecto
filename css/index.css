@@ -30,3 +30,38 @@
     width: 100%;
     opacity: 0.3;
 }
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        height: fit-content;
+    }
+
+    .hero-content {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .hero figure {
+        position: relative;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .hero {
+        justify-content: start;
+    }
+
+    .hero-content {
+        right: 150px;
+    }
+    .hero figure{
+        position: static;
+    }
+
+    .hero figure img {
+        height: 400px;
+        opacity: 0.8;
+    }
+}

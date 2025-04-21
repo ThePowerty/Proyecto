@@ -101,6 +101,7 @@ footer {
 .left{
   display: flex;
   flex-direction: column;
+  align-self: start;
   gap: 1rem;
   text-align: start;
 }
@@ -108,21 +109,26 @@ footer {
 .right{
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
   gap: 1rem;
   text-align: end;
 }
 
-.btn {
+.btn, .btn input {
   width: fit-content;
   align-self: flex-end;
   padding: 5px;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #4EE1A0;
+  border-bottom: 2px solid #4EE1A0 !important;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 2.29px;
+}
+
+.btn:hover {
+  border-bottom: 2px solid #6A5ACD !important;
 }
 
 .form {
@@ -131,9 +137,13 @@ footer {
 
 .form form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
   align-items: center;
+}
+
+.form form input{
+  height: 30px;
 }
 
 .form-btn {
@@ -142,12 +152,28 @@ footer {
   gap: 8px;
 }
 
+.form input,
+.form textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #242424;
+}
+
+.form input:focus-visible,
+.form textarea:focus-visible {
+    outline: none;
+    border-bottom: 2px solid #4EE1A0;
+}
+
+.form .photo input {
+  border: none;
+}
+
 .container iframe {
   width: 100%;
   height: 300px;
 }
 
-/* Media Queries */
 @media (min-width: 768px) {
   header {
     flex-direction: row;
@@ -168,7 +194,7 @@ footer {
 
   nav ul {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     max-height: 500px;
     opacity: 1;
   }
@@ -178,8 +204,31 @@ footer {
     transition: 1s;
   }
 
+  .form form input{
+    font-size: 18px;
+  }
+
   footer {
     font-size: 22px;
     text-align: end;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    padding: 40px 250px;
+  }
+
+  .hr {
+    margin: 0 200px;
+  }
+
+  .form form input{
+    font-size: 20px;
+  }
+
+  .form textarea {
+    width: 500px;
+    height: 200px;
   }
 }

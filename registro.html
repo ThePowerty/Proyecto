@@ -57,50 +57,38 @@
     </header>
 
     <main>
-      <section class="container">
+      <section class="container form">
         <h1>Regístrate</h1>
         <p>
           Para poder acceder a nuestra academia necesitamos que te registres
         </p>
-        <form class="left">
-          <p>
-            <label for="name">Nombre completo</label>
-            <input type="text" name="name" id="name" />
-          </p>
+        <form>
+          <input type="text" name="name" id="name" placeholder="Nombre" required/>
+
+            <input type="email" name="email" id="email" required placeholder="Email"/>
 
           <p>
             <label for="birthday">Fecha de nacimiento</label>
             <input type="date" name="birthday" id="birthday" />
           </p>
 
-          <p>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required />
-          </p>
+            <input type="text" name="address" id="address" placeholder="Dirección"/>
 
-          <p>
-            <label for="address">Dirección</label>
-            <input type="text" name="address" id="address" />
-          </p>
+            <input type="url" name="web" id="web" placeholder="Página web"/>
 
-          <p>
-            <label for="web">Página web</label>
-            <input type="url" name="web" id="web" />
-          </p>
-
-          <p>
+          <p class="photo">
             <label for="photo">Foto</label>
             <input type="file" name="photo" id="photo" />
           </p>
 
-          <p>
+          <p class="bio">
             <label for="bio">Biografía</label><br />
-            <textarea name="bio" id="bio" cols="30" rows="5"></textarea>
+            <textarea name="bio" id="bio" cols="50" rows="5"></textarea>
           </p>
 
-          <div>
+          <div class="form-btn">
             <button class="btn">Enviar</button>
-            <input type="reset" value="Borrar formulario" class="btn"/>
+            <input type="reset" value="Borrar formulario" class="btn" />
           </div>
         </form>
       </section>

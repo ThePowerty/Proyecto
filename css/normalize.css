@@ -33,12 +33,27 @@ h2 {
   font-weight: 700;
 }
 
-@media (min-width: 1025px) {
-  html {
-      font-size: 18px;
+@media (min-width: 768px) {
+  h1 {
+    font-size: 60px;
   }
 
-  body {
-      line-height: 28px;
+  h2 {
+    font-size: 45px;
   }
+
+  p {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 85px;
+  }
+
+  h2 {
+    font-size: 55px;
+  }
+
 }
